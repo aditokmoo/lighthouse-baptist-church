@@ -1,0 +1,88 @@
+@import '../../../styles/mixin.scss';
+
+.faq {
+    padding: 10rem 0;
+
+    .container {
+        margin: 0 auto;
+        max-width: 130rem;
+
+        .faqSection {
+
+            .heading {
+                text-align: center;
+                margin: 0 auto;
+                width: 76rem;
+
+                @include responsive("mobile") {
+					width: 100%;
+                    padding: 0 2rem;
+				}
+
+                h2 {
+                    font-size: 5.4rem;
+                    font-weight: 900;
+                    line-height: 110%;
+
+                    @include responsive("mobile") {
+                        font-size: 3.2rem;
+                    }
+                }
+
+                p {
+                    color: #605757;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.6;
+                    width: 64.4rem;
+                    margin: 1.4rem auto;
+
+                    @include responsive("mobile") {
+                        font-size: 1.2rem;
+                        width: 33.6rem;
+                    }
+                }
+            }
+
+            .questions {
+                display: flex;
+                flex-direction: column;
+                width: 60.6rem;
+                margin-top: 6rem;
+                margin-right: auto;
+                margin-left: auto;
+
+                @include responsive("mobile") {
+                    padding: 0 2rem;
+                    width: 100%;
+                }
+                
+                .questionItem {
+                    padding: 2rem 1rem;
+                    border-bottom: 1px solid #ddd;
+                    cursor: pointer;
+                    
+                    .question {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .content {
+                        display: none;
+
+                        p {
+                            font-size: 1.4rem;
+                            margin: 2.5rem 0;
+                            line-height: 1.8;
+                        }
+
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

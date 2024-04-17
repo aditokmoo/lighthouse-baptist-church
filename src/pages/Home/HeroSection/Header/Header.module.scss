@@ -1,0 +1,110 @@
+@import '../../../../styles/mixin.scss';
+
+.header {
+	background-image: url('../../../../assets/hero-section-bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 67rem;
+
+	@include responsive-custom(1280px) {
+		height: 80rem;
+	}
+
+	@include responsive('mobile') {
+		height: 67rem;
+	}
+
+    
+	.container {
+        max-width: 130rem;
+		margin: 0 auto;
+		padding: 0 2rem;
+        
+		.headerSection {
+            padding-top: 15rem;
+            position: relative;
+
+			h1.titleText {
+				font-family: 'Mulish', sans-serif;
+				font-weight: 900;
+				font-size: 15.2rem;
+				text-align: center;
+				line-height: 120%;
+				color: rgb(255,255,255);
+				color: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
+				@include responsive-custom(1280px) {
+					font-size: 7.2rem;
+					width: 33.5rem;
+					margin: 0 auto;
+				}
+			}
+
+			.headerNotes {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				@include responsive-custom(1280px) {
+					display: none;
+				}
+
+				.items {
+					display: flex;
+					flex-direction: column;
+					gap: 0.8rem;
+
+					&:first-child {
+						span {
+							background: rgb(255,255,255);
+							background: linear-gradient(260deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+						}
+					}
+
+                    &:last-child {
+						span {
+							background: rgb(255,255,255);
+							background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+						}
+
+                        span:last-child {
+                            position: relative;
+                            left: 8rem
+                        }
+                    }
+
+					span {
+						width: -moz-fit-content;
+						width: fit-content;
+						display: table;
+						padding: 1rem 2rem;
+						font-size: 1.8rem;
+						font-weight: 600;
+						color: #191616;
+					}
+				}
+			}
+
+            .churchImage {
+                position: absolute;
+				width: 77.5rem;
+				height: 42.1rem;
+                bottom: -11rem;
+                left: 26rem;
+
+				@include responsive-custom(1280px) {
+					left: 0;
+					bottom: -39.1rem;
+					width: 100%;
+					height: 35rem;
+				}
+
+				@include responsive("mobile") {
+					height: auto;
+					bottom: -26.1rem;
+				}
+            }
+		}
+	}
+}

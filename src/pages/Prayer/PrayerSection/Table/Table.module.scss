@@ -1,0 +1,49 @@
+@import '../../../../styles/mixin.scss';
+
+.missions,
+.persecution {
+	margin: 5rem 0;
+
+    @include responsive-custom(1280px) {
+        display: none;
+    }
+
+	h2 {
+		margin: 2rem 0;
+		font-weight: 900;
+		font-size: 3.2rem;
+		color: #242121;
+	}
+
+	.table {
+		width: 100%;
+		text-align: left;
+		border: 1px solid #ddd;
+
+		thead td {
+			font-weight: bold;
+			font-weight: 1.6rem;
+		}
+
+		tbody td {
+			border-top: 1px solid #ddd;
+		}
+
+		th,
+		td {
+			height: 5.6rem;
+			padding: 0 1rem;
+			border-right: 1px solid #ddd;
+			line-height: 1.4;
+
+			&:last-child {
+				border-right: 0;
+			}
+
+			span {
+				font-size: 1.4rem;
+				color: #808080;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@import '../../../styles/mixin.scss';
+
+.LiveStreamService {
+    margin: 10rem 0;
+
+    .container {
+        max-width: 130rem;
+        margin: 0 auto;
+		padding: 0 2rem;
+
+        .liveSession {
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 900;
+                margin: 2rem 0;
+
+                @include responsive-custom(1280px) {
+                    text-align: center;
+                }
+            }
+
+            .liveBox {
+                background-color: #F3F3F3;
+                width: 55.9rem;
+                height: 31.4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                @include responsive-custom(1280px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                h3 {
+                    line-height: 110%;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .recordings {
+            margin: 3rem 0;
+
+            h2 {
+                margin: 2rem 0;
+                font-weight: 900;
+                font-size: 3.2rem;
+                color: #242121;
+            }
+        }
+    }
+}

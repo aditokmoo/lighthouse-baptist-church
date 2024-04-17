@@ -1,0 +1,27 @@
+@import '../../../../styles/mixin.scss';
+
+h1.titleText {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-size: 15.2rem;
+    width: 97.6rem;
+    line-height: 110%;
+    color: rgb(255,255,255);
+    color: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    position: relative;
+    z-index: 3;
+
+    @include responsive-custom(1280px) {
+        font-size: 10rem;
+        margin: 0 auto;
+        width: 50rem;
+        text-align: center;
+        position: relative;
+        top: -3rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 7.2rem;
+        width: 33.5rem;
+    }
+}

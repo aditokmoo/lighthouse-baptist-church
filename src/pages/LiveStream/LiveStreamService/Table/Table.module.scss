@@ -1,0 +1,37 @@
+@import '../../../../styles/mixin.scss';
+
+.table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ddd;
+    display: inline-table;
+
+    @include responsive-custom(1280px) {
+        display: none;
+    }
+
+    thead td {
+        font-weight: bold;
+        font-weight: 1.6rem;
+    }
+
+    tbody td {
+        border-top: 1px solid #ddd;
+    }
+
+    th, td {
+        height: 5.6rem;
+        padding: 0 1rem;
+        border-right: 1px solid #ddd;
+        line-height: 1.4;
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        span {
+            font-size: 1.4rem;
+            color: #808080;
+        }
+    }
+}

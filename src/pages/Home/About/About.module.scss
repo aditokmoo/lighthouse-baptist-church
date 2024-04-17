@@ -1,0 +1,111 @@
+@import '../../../styles/mixin.scss';
+
+.about {
+    padding: 15rem 0;
+
+    .container {
+        margin: 0 auto;
+        max-width: 130rem;
+		padding: 0 2rem;
+
+        .aboutSection {
+            
+            .heading {
+                text-align: center;
+                width: 81.6rem;
+                margin: 0 auto;
+
+                @include responsive-custom(1280px) {
+					width: 100%;
+                    padding: 0 2rem;
+				}
+
+                h2 {
+                    font-size: 5.4rem;
+                    font-weight: 900;
+
+                    @include responsive-custom(1280px) {
+                        font-size: 4rem;
+                    }
+
+                    @include responsive("mobile") {
+                        font-size: 3.2rem;
+                    }
+                }
+
+                p {
+                    color: #605757;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.6;
+
+                    @include responsive-custom(1280px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @include responsive("mobile") {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .images {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                justify-content: center;
+                margin: 5rem 0;
+                position: relative;
+
+                @include responsive-custom(1280px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    padding: 1rem 2rem;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 62rem;
+                    background: rgb(255,255,255);
+                    background: radial-gradient(circle, rgba(255,255,255,0.2) 1%, rgba(255,255,255,0.5) 100%);
+                    z-index: 3;
+
+                    @include responsive-custom(1280px) {
+                        height: calc(100% + 5rem);
+                    }
+                }
+
+                .imagesLayer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    &:nth-child(even) {
+                        position: relative;
+                        top: 6rem;
+                    }
+
+                    .image {
+                        width: 29.1rem;
+                        height: 27rem;
+                        background-color: #ddd;
+
+                        @include responsive-custom(1280px) {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @include responsive("mobile") {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
