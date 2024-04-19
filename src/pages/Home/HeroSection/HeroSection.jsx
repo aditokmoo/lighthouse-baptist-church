@@ -2,11 +2,11 @@
 import Header from './Header/Header';
 import Nav from './Nav/Nav';
 
-export default function HeroSection() {
+export default function HeroSection({title}) {
 	return (
 		<>
 			<Nav />
-			<Header />
+			<Header title={title} />
 		</>
 	);
 }

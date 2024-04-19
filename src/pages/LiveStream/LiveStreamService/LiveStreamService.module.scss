@@ -9,19 +9,35 @@
 		padding: 0 2rem;
 
         .liveSession {
-            h2 {
-                font-size: 3.2rem;
-                font-weight: 900;
-                margin: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 15rem;
 
-                @include responsive-custom(1280px) {
-                    text-align: center;
+            .content {
+                width: 100%;
+
+                h2 {
+                    font-size: 3.2rem;
+                    font-weight: 900;
+                    margin: 2rem 0;
+                    font-size: 5.4rem;
+                    color: #4E3718;
+    
+                    @include responsive-custom(1280px) {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    color: #7F7A74;
                 }
             }
 
+
             .liveBox {
+                width: 100%;
                 background-color: #F3F3F3;
-                width: 55.9rem;
                 height: 31.4rem;
                 display: flex;
                 align-items: center;

@@ -1,15 +1,17 @@
 @import '../../../../styles/mixin.scss';
 
 h1.titleText {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-weight: 900;
-    font-size: 15.2rem;
-    width: 97.6rem;
+    font-size: 11rem;
     line-height: 110%;
     color: rgb(255,255,255);
     color: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     position: relative;
     z-index: 3;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6A4A20;
 
     @include responsive-custom(1280px) {
         font-size: 10rem;

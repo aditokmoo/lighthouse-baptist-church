@@ -1,11 +1,10 @@
 @import '../../../../styles/mixin.scss';
 
 .header {
-	background-image: url('../../../../assets/hero-section-bg.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 67rem;
+	height: 80rem;
 
 	@include responsive-custom(1280px) {
 		height: 80rem;
@@ -22,8 +21,9 @@
 		padding: 0 2rem;
         
 		.headerSection {
-            padding-top: 15rem;
+            padding-top: 25rem;
             position: relative;
+			text-align: center;
 
 			h1.titleText {
 				font-family: 'Mulish', sans-serif;
@@ -36,9 +36,16 @@
 
 				@include responsive-custom(1280px) {
 					font-size: 7.2rem;
-					width: 33.5rem;
-					margin: 0 auto;
+					text-align: center;
 				}
+			}
+
+			p {
+				margin-top: 2.5rem;
+				font-weight: 200;
+				font-size: 2rem;
+				font-family: 'Neun Montreal', sans-serif;
+				color: #6A4A20;
 			}
 
 			.headerNotes {

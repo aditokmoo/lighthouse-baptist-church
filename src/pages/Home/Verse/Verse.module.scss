@@ -1,0 +1,32 @@
+.section {
+    background-color: #FDF8F3;
+    padding: 15rem 0;
+
+    .container {
+        margin: 0 auto;
+        max-width: 130rem;
+        padding: 0 2rem;
+    
+        .verseSection {
+            text-align: center;
+            width: 80rem;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 5.4rem;
+                color: #4E3718;
+                font-weight: bold;
+                font-family: 'Gotham', sans-serif;
+            }
+            
+            p {
+                font-size: 3.2rem;
+                line-height: 1.2;
+                font-style: italic;
+                color: #7F7A74;
+                font-weight: 500;
+                margin: 1rem 0;
+            }
+        }
+    }
+}

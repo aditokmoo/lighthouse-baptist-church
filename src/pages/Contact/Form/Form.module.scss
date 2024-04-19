@@ -1,0 +1,62 @@
+.form {
+    padding: 5rem 0 10rem 0;
+
+    .container {
+        margin: 0 auto;
+        max-width: 130rem;
+
+        .formSection {
+            max-width: 50rem;
+            width: 100%;
+            margin: 0 auto;
+
+            form {
+                width: 100%;
+                
+                .formContainer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    width: 100%;
+
+                    .input, .textarea {
+                        width: 100%;
+                        padding: 1.5rem;
+                        resize: none;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        font-family: 'Gotham', sans-serif;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .textarea {
+                        height: 13rem;
+                    }
+                }
+
+                button {
+                    padding: 1.5rem;
+                    background-color: #B88137;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-family: 'Gotham', sans-serif;
+                    border: 0;
+                    outline: none;
+                    border-radius: 4px;
+                    width: 100%;
+                    cursor: pointer;
+                    transition: .2s;
+                    margin-top: 2rem;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}

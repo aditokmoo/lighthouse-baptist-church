@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 // Images
-import footerLogo from '../../../assets/footer-logo.webp';
+import footerLogo from '../../../assets/logo.svg';
 // React icons
 import { IoLocationSharp } from 'react-icons/io5';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -15,8 +15,7 @@ export default function Footer() {
 				<div className={styles.footerSection}>
 					<div className={styles.col}>
 						<h3>
-							<img src={footerLogo} alt="Bible Baptist Church" className={styles.footerLogo} />Bible
-							Baptist Church
+							<img src={footerLogo} alt="Bible Baptist Church" className={styles.footerLogo} />
 						</h3>
 						<p>
 							Join Bible Baptist Church, rooted in the King James Bible for over 30 years, welcoming all
@@ -27,16 +26,16 @@ export default function Footer() {
 						<h4>Pages</h4>
 						<ul>
 							<li>
-								<Link to="/">Staff</Link>
+								<Link to="/">Home</Link>
 							</li>
 							<li>
-								<Link to="/">Ministries</Link>
+								<Link to="/about">About Us</Link>
 							</li>
 							<li>
-								<Link to="/">Pastor’s Corner</Link>
+								<Link to="/live-stream">Live Stream</Link>
 							</li>
 							<li>
-								<Link to="/">Prayer</Link>
+								<Link to="/contact">Contact Us</Link>
 							</li>
 						</ul>
 					</div>

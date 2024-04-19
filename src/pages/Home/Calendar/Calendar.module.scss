@@ -38,6 +38,7 @@
                 h2 {
                     font-size: 5.4rem;
                     font-weight: 900;
+                    color: #4E3718;
 
                     @include responsive("mobile") {
                         font-size: 3.2rem;
@@ -45,7 +46,7 @@
                 }
 
                 p {
-                    color: #605757;
+                    color: #7F7A74;
                     font-size: 1.8rem;
                     font-weight: 600;
                     line-height: 1.6;

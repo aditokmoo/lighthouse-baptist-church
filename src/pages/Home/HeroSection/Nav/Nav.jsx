@@ -3,8 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 // Images
-import logo from '../../../../assets/logo.webp';
-import musicPlayerIcon from '../../../../assets/music-player-icon.webp';
+import logo from '../../../../assets/logo.svg';
 // SCSS
 import styles from './Nav.module.scss';
 
@@ -21,25 +20,21 @@ export default function Nav() {
 					<ul className={isOpen ? styles.mobileLinks : styles.links}>
 					<button className={styles.closeMenu} onClick={() => setIsOpen(prevState => !prevState)}>{isOpen && <FaTimes />}</button>
 						<li>
-							<Link to="/staff" className={pathname === '/staff' ? styles.active : ''}>Staff</Link>
+							<Link to="/" className={pathname === '/' ? styles.active : ''}>Home</Link>
 						</li>
 						<li>
-							<Link to="/ministries" className={pathname === '/ministries' ? styles.active : ''}>Ministries</Link>
+							<Link to="/about" className={pathname === '/about' ? styles.active : ''}>About</Link>
 						</li>
 						<li>
-							<Link to="/pastor-corner" className={pathname === '/pastor-corner' ? styles.active : ''}>Pastor’s Corner</Link>
-						</li>
-						<li>
-							<Link to="/prayer" className={pathname === '/prayer' ? styles.active : ''}>Prayer</Link>
+							<Link to="/contact" className={pathname === '/contact' ? styles.active : ''}>Contact</Link>
 						</li>
 						{isOpen && (
 							<li>
-								<Link to="/live-stream" className={pathname === '/prayer' ? styles.active : ''}>Live Stream</Link>
+								<Link to="/live-stream" className={pathname === '/live-stream' ? styles.active : ''}>Live Stream</Link>
 							</li>
 						)}
 					</ul>
 				    <Link to='/live-stream' className={styles.btn}>
-                        <img src={musicPlayerIcon} alt="" />
                         Live Stream
                     </Link>
 					<button className={styles.hambMenu} onClick={() => setIsOpen(prevState => !prevState)}>{!isOpen && <GiHamburgerMenu />}</button>

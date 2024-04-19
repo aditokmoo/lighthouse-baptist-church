@@ -3,7 +3,7 @@ import styles from './Table.module.scss';
 
 export default function Table() {
 	return (
-		<table class={styles.table}>
+		<table className={styles.table}>
 			<thead>
 				<tr>
 					<td scope="col">Title</td>

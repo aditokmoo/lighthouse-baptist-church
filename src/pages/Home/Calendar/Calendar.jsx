@@ -7,7 +7,7 @@ export default function Calendar() {
 			<div className={styles.container}>
 				<div className={styles.calendarSection}>
 					<div className={styles.heading}>
-						<h2>Church Calendar</h2>
+						<h2>Our Church Calendar</h2>
 						<p>
 							Check our church calendar – it's the roadmap to good times. Days of worship, hangouts, and
 							doing good shine in Carolina blue. Don't miss out!
