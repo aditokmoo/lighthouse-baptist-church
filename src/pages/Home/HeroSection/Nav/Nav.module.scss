@@ -19,6 +19,11 @@
                 padding: 3rem 2rem;
             }
 
+            @include responsive('mobile') {
+                padding: 0 2rem;
+            }
+
+
             .logo {
                 width: 13rem;
                 height: 13rem;
@@ -36,7 +41,7 @@
                     right: 0;
                     height: 100vh;
                     background-color: #ddd;
-                    opacity: 0.9;
+                    opacity: 0.93;
                     width: 100%;
                     list-style: none;
                     text-align: center;
@@ -103,6 +108,7 @@
                 position: relative;
                 top: 0.5rem;
                 display: none;
+                cursor: pointer;
 
                 @include responsive-custom(1280px) {
                     display: block;
@@ -118,6 +124,7 @@
                 top: 3.5rem;
                 right: 2rem;
                 display: none;
+                cursor: pointer;
                 z-index: 9;
                 
                 @include responsive-custom(1280px) {

@@ -1,3 +1,5 @@
+@import '../../../styles/mixin.scss';
+
 .section {
     padding: 10rem 0;
 
@@ -11,6 +13,10 @@
             gap: 3rem;
             width: 100%;
 
+            @include responsive('mobile') {
+                padding: 2rem;
+            }
+
             .box {
                 display: flex;
                 justify-content: space-between;
@@ -18,12 +24,21 @@
                 width: 100%;
                 margin: 5rem 0;
 
+                @include responsive('mobile') {
+                    flex-direction: column;
+                    gap: 5rem;
+
+                    &:nth-child(2) {
+                        flex-direction: column-reverse;
+                    }
+                }
+
                 .image {
                     width: 100%;
-                    height: 28.5rem;
 
                     img {
                         width: 100%;
+                        object-fit: cover;
                     }
                 }
 
@@ -32,10 +47,18 @@
                     
                     &:first-child {
                         padding-right: 7rem;
+
+                        @include responsive('mobile') {
+                            padding-right: 0;
+                        }
                     }
 
                     &:last-child {
                         padding-left: 7rem;
+
+                        @include responsive('mobile') {
+                            padding-left: 0;
+                        }
                     }
                     
                     h3 {

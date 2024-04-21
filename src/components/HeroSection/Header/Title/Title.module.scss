@@ -23,7 +23,7 @@ h1.titleText {
     }
 
     @include responsive("mobile") {
-        font-size: 7.2rem;
-        width: 33.5rem;
+        font-size: 4rem;
+        width: 100%;
     }
 }

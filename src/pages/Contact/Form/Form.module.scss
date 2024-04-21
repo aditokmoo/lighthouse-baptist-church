@@ -1,5 +1,11 @@
+@import '../../../styles/mixin.scss';
+
 .form {
     padding: 5rem 0 10rem 0;
+
+    @include responsive('mobile') {
+        padding: 5rem 2rem 10rem 2rem;
+    }
 
     .container {
         margin: 0 auto;

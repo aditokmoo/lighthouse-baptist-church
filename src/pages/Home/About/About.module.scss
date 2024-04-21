@@ -3,10 +3,14 @@
 .about {
     padding: 15rem 0;
 
+    @include responsive('mobile') {
+      padding: 8rem 0;
+    }
+
     .container {
         margin: 0 auto;
         max-width: 130rem;
-		padding: 0 2rem;
+		    padding: 0 2rem;
 
         .aboutSection {
             
@@ -16,9 +20,9 @@
                 margin: 0 auto;
 
                 @include responsive-custom(1280px) {
-					width: 100%;
+					          width: 100%;
                     padding: 0 2rem;
-				}
+				        }
 
                 h2 {
                     font-size: 5.4rem;
@@ -65,11 +69,16 @@
                   grid-template-columns: repeat(5, 1fr);
                   grid-gap: 20px;
                   width: 100%;
-          
+
+                  
                   @include responsive("tab-land") {
                     grid-template-columns: repeat(2, 1fr);
                   }
-          
+                  
+                  @include responsive('mobile') {
+                    grid-template-columns: repeat(1, 1fr);
+                  }
+
                   .image {
                     width: 100%;
                     position: relative;
