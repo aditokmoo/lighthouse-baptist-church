@@ -18,8 +18,7 @@ export default function Footer() {
 							<img src={footerLogo} alt="Bible Baptist Church" className={styles.footerLogo} />
 						</h3>
 						<p>
-							Join Bible Baptist Church, rooted in the King James Bible for over 30 years, welcoming all
-							to worship and grow in Christ.
+							We exist to be light to the lost. We are ONLY Independent Baptist Church in Haughton, LA. Loving on people and preaching the truth of the Gospel!
 						</p>
 					</div>
 					<div className={styles.col}>
@@ -43,13 +42,10 @@ export default function Footer() {
 						<h4>Contact</h4>
 						<ul>
 							<li>
-								<IoLocationSharp /> 2733 Kirkdwood Dr. Burlington, North Carolina 27215
+								<IoLocationSharp /> 7789 S Elm St, LA-157, Haughton, LA 71037
 							</li>
 							<li>
-								<FaPhoneAlt /> 336-350-7336
-							</li>
-							<li>
-								<FaPhoneAlt /> 336-213-9878
+								<FaPhoneAlt /> 318-455-4791
 							</li>
 							<li>
 								<Link to="/">
@@ -61,7 +57,7 @@ export default function Footer() {
 					<div className={styles.col}>
 						<h4>Location</h4>
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.1611201348333!2d-79.46606982383241!3d36.06517400878704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88532bfb95d79997%3A0x30150ef46a0fc6d7!2s2733%20Kirkwood%20Dr%2C%20Burlington%2C%20NC%2027215%2C%20USA!5e0!3m2!1sen!2sba!4v1709115728131!5m2!1sen!2sba"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3364.3724649188334!2d-93.51864712395123!3d32.516197797268795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86313be703fded69%3A0xa5b6646edd4e6299!2s7789%20S%20Elm%20St%2C%20Haughton%2C%20LA%2071037%2C%20USA!5e0!3m2!1sen!2sba!4v1714257934492!5m2!1sen!2sba"
 							width="600"
 							height="450"
 							style={{ border: 0 }}
