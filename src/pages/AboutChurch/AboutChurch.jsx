@@ -6,12 +6,12 @@ import Staff from './Staff'
 
 const AboutChurch = () => {
   return (
-        <>
-            <HeroSection title='About Our Church' />
-            <AboutSection />
-            <Staff />
-            <Footer />
-        </>
+    <>
+      <HeroSection title='About Our Church' />
+      <AboutSection />
+      <Staff />
+      <Footer />
+    </>
   )
 }
 
